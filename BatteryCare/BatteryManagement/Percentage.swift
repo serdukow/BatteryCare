@@ -14,7 +14,7 @@ struct Percentage {
     /// en_US: 42% fr_FR: 42 %
     var formatted: String {
         guard let percentage = numeric else {
-            return NSLocalizedString("Calculating", comment: "")
+            return NSLocalizedString("Percentage Updating", comment: "")
         }
 
         let percentageFormatter = NumberFormatter()

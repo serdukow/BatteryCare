@@ -1,6 +1,5 @@
 //
 //  BatteryService.swift
-//  powermann
 //
 //  Created by Andre on 02.11.2023.
 //
@@ -120,21 +119,18 @@ final class BatteryService {
     }
 
     /// The number of charging cycles.
-    var cycleCount: Int? {
-        getRegistryProperty(forKey: .cycleCount) as? Int
+    var cycleCount: CycleCount {
+        CycleCount(numeric: getRegistryProperty(forKey: .cycleCount) as? Int)
     }
 
     /// The battery's current temperature.
-    var temperature: Double? {
-        guard let temp = getRegistryProperty(forKey: .temperature) as? Double else {
-            return nil
-        }
-        return round(temp / 100)
+    var temperature: BatteryTemperature {
+        BatteryTemperature(numeric: getRegistryProperty(forKey: .temperature) as? Double)
     }
 
     /// The batteries' health status
-    var health: String? {
-        getPowerSourceProperty(forKey: .health) as? String
+    var health: BatteryCondition {
+        BatteryCondition(string: getPowerSourceProperty(forKey: .health) as? String)
     }
 
     // MARK: Private

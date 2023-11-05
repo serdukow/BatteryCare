@@ -13,7 +13,19 @@ struct TimeRemaining {
 
     var formatted: String {
         guard let minutesRemaining = minutes, let batteryState = state else {
-            return NSLocalizedString("Calculating", comment: "")
+            return NSLocalizedString("Time Remaining Updating", comment: "")
+        }
+
+        if batteryState == .chargedAndPlugged {
+            return NSLocalizedString("Charged Notification Title", comment: "")
+        }
+
+        return String(format: "Time Remainig: %dh %02dm", arguments: [minutesRemaining / 60, minutesRemaining % 60])
+    }
+    
+    var timeFormatted: String {
+        guard let minutesRemaining = minutes, let batteryState = state else {
+            return NSLocalizedString("Time Remaining Updating", comment: "")
         }
 
         if batteryState == .chargedAndPlugged {
@@ -22,4 +34,5 @@ struct TimeRemaining {
 
         return String(format: "%dh %02dm", arguments: [minutesRemaining / 60, minutesRemaining % 60])
     }
+    
 }

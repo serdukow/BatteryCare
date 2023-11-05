@@ -1,6 +1,5 @@
 //
 //  ApplicationController.swift
-//  powermann
 //
 //  Created by Andre on 02.11.2023.
 //
@@ -17,6 +16,7 @@ final class ApplicationController: NSObject {
     @IBOutlet weak var applicationMenu: NSMenu!
 
     @objc dynamic var launchAtLogin = LaunchAtLogin.kvo
+    
 
     override init() {
         super.init()
@@ -31,16 +31,16 @@ final class ApplicationController: NSObject {
             // Register the ApplicationController as observer for power source and user preference changes
             UserDefaults
                 .standard
-                .addObserver(self, forKeyPath: PreferenceKey.showTime.rawValue, options: .new, context: nil)
-
-            UserDefaults
-                .standard
-                .addObserver(self, forKeyPath: PreferenceKey.hideMenubarInfo.rawValue, options: .new, context: nil)
+                .addObserver(self, forKeyPath: PreferenceKey.hidePercentage.rawValue, options: .new, context: nil)
 
             UserDefaults
                 .standard
                 .addObserver(self, forKeyPath: PreferenceKey.hideBatteryIcon.rawValue, options: .new, context: nil)
 
+            UserDefaults
+                .standard
+                .addObserver(self, forKeyPath: PreferenceKey.hideBatteryInfo.rawValue, options: .new, context: nil)
+            
             NotificationCenter.default
                 .addObserver(self,
                              selector: #selector(ApplicationController.powerSourceChanged(_:)),

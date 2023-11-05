@@ -1,12 +1,14 @@
 //
 //  AppDelegate.swift
-//  powermann
 //
 //  Created by Andre on 02.11.2023.
 //
 
 import Cocoa
 import UserNotifications
+import LaunchAtLogin
+
+
 
 @NSApplicationMain
 final class AppDelegate: NSObject, NSApplicationDelegate {

@@ -1,6 +1,5 @@
 //
 //  MenuInfoViewModel.swift
-//  powermann
 //
 //  Created by Andre on 02.11.2023.
 //
@@ -9,10 +8,12 @@ import Foundation
 
 @available(OSX 11.0, *)
 class MenuInfoViewModel: ObservableObject {
-    @Published var powerSource = NSLocalizedString("Unknown", comment: "")
-    @Published var remaining = NSLocalizedString("Calculating", comment: "")
-    @Published var cycleCount = "--"
-    @Published var batteryTemperature = "--"
+    @Published var powerSource = NSLocalizedString("Power Source Updating", comment: "")
+    @Published var percentage = NSLocalizedString("Percentage Updating", comment: "")
+    @Published var remaining = NSLocalizedString("Time Remaining Updating", comment: "")
+    @Published var cycleCount = NSLocalizedString("Cycle Count Updating", comment: "")
+    @Published var batteryTemperature = NSLocalizedString("Battery Temperature Updating", comment: "")
+    @Published var batteryCondition = NSLocalizedString("Battery Condition Updating", comment: "")
 
     private let batteryService: BatteryService?
 
@@ -38,7 +39,9 @@ class MenuInfoViewModel: ObservableObject {
 
     private func update() {
         guard let percentage = batteryService?.percentage,
+              let timeRemaining = batteryService?.timeRemaining,
               let batteryTemperature = batteryService?.temperature,
+              let batteryCondiotion = batteryService?.health,
               let cycleCount = batteryService?.cycleCount,
               let powerSource = batteryService?.powerSource
         else {
@@ -46,14 +49,14 @@ class MenuInfoViewModel: ObservableObject {
         }
 
         self.powerSource = powerSource.localizedDescription
-        if UserPreferences.showTime {
-            self.remaining = percentage.formatted
-            self.cycleCount = cycleCount.description
-            self.batteryTemperature = batteryTemperature.description
+        if UserPreferences.hideBatteryInfo{
+            self.percentage = percentage.formatted
         } else {
-            self.remaining = percentage.formatted
-            self.cycleCount = cycleCount.description
-            self.batteryTemperature = batteryTemperature.description
+            self.percentage = percentage.formatted
+            self.cycleCount = cycleCount.CycleCountLocalizedDescription
+            self.batteryTemperature = batteryTemperature.BatteryTempLocalizedDescription
+            self.batteryCondition = batteryCondiotion.BatteryConditionLocalizedDescription
+            self.remaining = timeRemaining.formatted
         }
     }
 }

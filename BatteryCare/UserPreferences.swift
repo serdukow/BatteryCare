@@ -1,6 +1,5 @@
 //
 //  UserPreferences.swift
-//  powermann
 //
 //  Created by Andre on 02.11.2023.
 //
@@ -10,33 +9,38 @@ import Foundation
 /// Manages the user preferences.
 final class UserPreferences: NSObject {
     // MARK: Internal
-
+    
     /// True if the user wants the remaining time to be displayed within the menu bar.
     static var showTime: Bool {
         userDefaults.bool(forKey: PreferenceKey.showTime.rawValue)
     }
 
-    /// Hide all menu bar information
-    static var hideMenubarInfo: Bool {
-        userDefaults.bool(forKey: PreferenceKey.hideMenubarInfo.rawValue)
+    /// Hide Menu Bar Percentage
+    static var hidePercentage: Bool {
+        userDefaults.bool(forKey: PreferenceKey.hidePercentage.rawValue)
     }
 
-    /// Hide all menu bar information
+    /// Hide Battery Icon
     static var hideBatteryIcon: Bool {
         userDefaults.bool(forKey: PreferenceKey.hideBatteryIcon.rawValue)
     }
+    
+    /// Hide all battery info
+    static var hideBatteryInfo: Bool {
+        userDefaults.bool(forKey: PreferenceKey.hideBatteryInfo.rawValue)
+    }
 
-    /// True if the user wants a notification at five percent.
+    /// True if the user wants a notification at twenty percent.
     static var twentyPercentNotification: Bool {
         userDefaults.bool(forKey: PreferenceKey.twentyPercentNotification.rawValue)
     }
 
-    /// True if the user wants a notification at twenty percent.
+    /// True if the user wants a notification at twenty two percent.
     static var twentyTwoPercentNotification: Bool {
         userDefaults.bool(forKey: PreferenceKey.twentyTwoPercentNotification.rawValue)
     }
 
-    /// True if the user wants a notification at hundred percent.
+    /// True if the user wants a notification at eighty percent.
     static var eightyPercentNotification: Bool {
         userDefaults.bool(forKey: PreferenceKey.eightyPercentNotification.rawValue)
     }
@@ -76,11 +80,12 @@ final class UserPreferences: NSObject {
     static func registerDefaults() {
         let defaultPreferences = [
             PreferenceKey.showTime.rawValue: true,
-            PreferenceKey.twentyPercentNotification.rawValue: true,
-            PreferenceKey.twentyTwoPercentNotification.rawValue: true,
-            PreferenceKey.eightyPercentNotification.rawValue: true,
+            PreferenceKey.twentyPercentNotification.rawValue: false,
+            PreferenceKey.twentyTwoPercentNotification.rawValue: false,
+            PreferenceKey.eightyPercentNotification.rawValue: false,
             PreferenceKey.lastNotification.rawValue: 0,
-            PreferenceKey.hideMenubarInfo.rawValue: false,
+            PreferenceKey.hidePercentage.rawValue: false,
+            PreferenceKey.hideBatteryInfo.rawValue: true,
         ] as [String: Any]
 
         userDefaults.register(defaults: defaultPreferences)

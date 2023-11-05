@@ -7,11 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		730DDECA2AFEDB8300DEFCDA /* CycleCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 730DDEC92AFEDB8300DEFCDA /* CycleCount.swift */; };
+		730DDECC2AFEE2A400DEFCDA /* BatteryTemperature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 730DDECB2AFEE2A400DEFCDA /* BatteryTemperature.swift */; };
+		7318C8CB2B02B1B400B40347 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 7318C8CA2B02B1B400B40347 /* Localizable.xcstrings */; };
+		7318C8D32B02BFC800B40347 /* .gitignore.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7318C8D22B02BFC800B40347 /* .gitignore.strings */; };
 		731998222AF2988000705336 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 731998212AF2988000705336 /* Assets.xcassets */; };
 		731B1E902AF6184A00CC9941 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 731B1E8F2AF6184A00CC9941 /* Info.plist */; };
-		7332485A2AF7CF97004BBE1E /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 733248592AF7CF97004BBE1E /* Localizable.xcstrings */; };
 		734331E82AF37AD600791205 /* LaunchAtLogin in Frameworks */ = {isa = PBXBuildFile; productRef = 734331E72AF37AD600791205 /* LaunchAtLogin */; };
-		73848A802AF6FB6300574F08 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73848A7E2AF6FB6300574F08 /* MainMenu.xib */; };
+		73A333BE2B02B02C00AC6DDA /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73848A7E2AF6FB6300574F08 /* MainMenu.xib */; };
+		73A7900E2AF82AF5001382AE /* createdmg.json in Resources */ = {isa = PBXBuildFile; fileRef = 73A7900D2AF82AF5001382AE /* createdmg.json */; };
+		73E2B5682B0145D300E08123 /* BatteryCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E2B5672B0145D300E08123 /* BatteryCondition.swift */; };
 		73F2215D2AF4281F0009BDCF /* BatteryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F2215C2AF4281F0009BDCF /* BatteryService.swift */; };
 		73F2215F2AF428370009BDCF /* BatteryState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F2215E2AF428370009BDCF /* BatteryState.swift */; };
 		73F221612AF428430009BDCF /* TimeRemaining.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F221602AF428430009BDCF /* TimeRemaining.swift */; };
@@ -37,14 +42,22 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		730DDEC92AFEDB8300DEFCDA /* CycleCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CycleCount.swift; sourceTree = "<group>"; };
+		730DDECB2AFEE2A400DEFCDA /* BatteryTemperature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryTemperature.swift; sourceTree = "<group>"; };
+		7318C8CA2B02B1B400B40347 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		7318C8CC2B02B85C00B40347 /* Battery Care.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Battery Care.entitlements"; sourceTree = "<group>"; };
+		7318C8CF2B02BA3100B40347 /* de */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = de; path = de.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		7318C8D22B02BFC800B40347 /* .gitignore.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = .gitignore.strings; sourceTree = "<group>"; };
 		7319981A2AF2987F00705336 /* Battery Care.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Battery Care.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		731998212AF2988000705336 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		731998262AF2988000705336 /* Battery Care.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Battery Care.entitlements"; sourceTree = "<group>"; };
 		731B1E8F2AF6184A00CC9941 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		733248592AF7CF97004BBE1E /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
-		733248602AF7D2D8004BBE1E /* ru */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ru; path = "../../../Downloads/apple-juice-2020.12.0/AppleJuice/ru.lproj/MainMenu.xib"; sourceTree = "<group>"; };
-		733248622AF7DDEF004BBE1E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = "../../../Downloads/apple-juice-2020.12.0/AppleJuice/en.lproj/MainMenu.xib"; sourceTree = "<group>"; };
-		73848A7F2AF6FB6300574F08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = "../../../Downloads/apple-juice-2020.12.0/AppleJuice/Base.lproj/MainMenu.xib"; sourceTree = "<group>"; };
+		733248602AF7D2D8004BBE1E /* ru */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ru; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		733248622AF7DDEF004BBE1E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		73848A7F2AF6FB6300574F08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		738FAC372B015EF400213F03 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		738FAC3A2B015F0A00213F03 /* ru */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ru; path = ru.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		73A7900D2AF82AF5001382AE /* createdmg.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = createdmg.json; sourceTree = "<group>"; };
+		73E2B5672B0145D300E08123 /* BatteryCondition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryCondition.swift; sourceTree = "<group>"; };
 		73F2215C2AF4281F0009BDCF /* BatteryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryService.swift; sourceTree = "<group>"; };
 		73F2215E2AF428370009BDCF /* BatteryState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryState.swift; sourceTree = "<group>"; };
 		73F221602AF428430009BDCF /* TimeRemaining.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeRemaining.swift; sourceTree = "<group>"; };
@@ -107,15 +120,18 @@
 				73F2218C2AF43D550009BDCF /* ApplicationMenuDelegate.swift */,
 				73F2217A2AF431BD0009BDCF /* MenuInfoView.swift */,
 				73F2217C2AF431D40009BDCF /* MenuInfoViewModel.swift */,
+				73F221782AF4319D0009BDCF /* StatusBarItem.swift */,
 				73F221812AF432810009BDCF /* StatusNotification.swift */,
 				73F2216E2AF429190009BDCF /* NotificationKey.swift */,
 				73F2216A2AF428C50009BDCF /* UserPreferences.swift */,
 				73F2216C2AF428D70009BDCF /* PreferenceKey.swift */,
 				73848A7E2AF6FB6300574F08 /* MainMenu.xib */,
 				731998212AF2988000705336 /* Assets.xcassets */,
-				731998262AF2988000705336 /* Battery Care.entitlements */,
-				733248592AF7CF97004BBE1E /* Localizable.xcstrings */,
+				73A7900D2AF82AF5001382AE /* createdmg.json */,
+				7318C8CC2B02B85C00B40347 /* Battery Care.entitlements */,
 				731B1E8F2AF6184A00CC9941 /* Info.plist */,
+				7318C8CA2B02B1B400B40347 /* Localizable.xcstrings */,
+				7318C8D22B02BFC800B40347 /* .gitignore.strings */,
 			);
 			path = BatteryCare;
 			sourceTree = "<group>";
@@ -123,7 +139,6 @@
 		733248652AF81E56004BBE1E /* BatteryImageManagement */ = {
 			isa = PBXGroup;
 			children = (
-				73F221782AF4319D0009BDCF /* StatusBarItem.swift */,
 				73F221832AF432A00009BDCF /* StatusBarIcon.swift */,
 				73F221852AF432BF0009BDCF /* BatteryImageCache.swift */,
 				73F221872AF433180009BDCF /* NSImageExtencion.swift */,
@@ -139,6 +154,9 @@
 				73F221622AF4284C0009BDCF /* Percentage.swift */,
 				73F221602AF428430009BDCF /* TimeRemaining.swift */,
 				73F221642AF428540009BDCF /* PowerSource.swift */,
+				730DDEC92AFEDB8300DEFCDA /* CycleCount.swift */,
+				730DDECB2AFEE2A400DEFCDA /* BatteryTemperature.swift */,
+				73E2B5672B0145D300E08123 /* BatteryCondition.swift */,
 				73F221702AF42A360009BDCF /* BatteryRegistryPropertyKey.swift */,
 				73F221682AF428B10009BDCF /* BatteryError.swift */,
 				73F221722AF42A610009BDCF /* BatteryInfoTypeProtocol.swift */,
@@ -193,6 +211,7 @@
 				en,
 				Base,
 				ru,
+				de,
 			);
 			mainGroup = 731998112AF2987E00705336;
 			packageReferences = (
@@ -212,10 +231,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				73848A802AF6FB6300574F08 /* MainMenu.xib in Resources */,
+				7318C8D32B02BFC800B40347 /* .gitignore.strings in Resources */,
+				73A7900E2AF82AF5001382AE /* createdmg.json in Resources */,
+				7318C8CB2B02B1B400B40347 /* Localizable.xcstrings in Resources */,
+				73A333BE2B02B02C00AC6DDA /* MainMenu.xib in Resources */,
 				731B1E902AF6184A00CC9941 /* Info.plist in Resources */,
 				731998222AF2988000705336 /* Assets.xcassets in Resources */,
-				7332485A2AF7CF97004BBE1E /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,6 +247,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73E2B5682B0145D300E08123 /* BatteryCondition.swift in Sources */,
 				73F221882AF433180009BDCF /* NSImageExtencion.swift in Sources */,
 				73F221842AF432A00009BDCF /* StatusBarIcon.swift in Sources */,
 				73F2216F2AF429190009BDCF /* NotificationKey.swift in Sources */,
@@ -245,6 +267,8 @@
 				73F221752AF4313D0009BDCF /* AppDelegate.swift in Sources */,
 				73F221772AF431830009BDCF /* ApplicationController.swift in Sources */,
 				73F2215D2AF4281F0009BDCF /* BatteryService.swift in Sources */,
+				730DDECA2AFEDB8300DEFCDA /* CycleCount.swift in Sources */,
+				730DDECC2AFEE2A400DEFCDA /* BatteryTemperature.swift in Sources */,
 				73F2218B2AF435B20009BDCF /* SourceInfoType.swift in Sources */,
 				73F221612AF428430009BDCF /* TimeRemaining.swift in Sources */,
 				73F221632AF4284C0009BDCF /* Percentage.swift in Sources */,
@@ -260,9 +284,13 @@
 				73848A7F2AF6FB6300574F08 /* Base */,
 				733248602AF7D2D8004BBE1E /* ru */,
 				733248622AF7DDEF004BBE1E /* en */,
+				738FAC372B015EF400213F03 /* en */,
+				738FAC3A2B015F0A00213F03 /* ru */,
+				7318C8CF2B02BA3100B40347 /* de */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";
+			usesTabs = 0;
 		};
 /* End PBXVariantGroup section */
 
@@ -395,13 +423,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
-				CODE_SIGN_ENTITLEMENTS = powermann/powermann.entitlements;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_ENTITLEMENTS = "BatteryCare/Battery Care.entitlements";
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_LSBackgroundOnly = YES;
 				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainNibFile = MainMenu;
@@ -409,9 +440,10 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 2.2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.andreiserdiukov.BatteryCare;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 			};
@@ -423,13 +455,17 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
-				CODE_SIGN_ENTITLEMENTS = powermann/powermann.entitlements;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_ENTITLEMENTS = "BatteryCare/Battery Care.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_LSBackgroundOnly = YES;
 				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainNibFile = MainMenu;
@@ -437,9 +473,10 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 2.2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.andreiserdiukov.BatteryCare;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 			};

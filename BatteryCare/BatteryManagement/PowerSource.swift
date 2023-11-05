@@ -13,7 +13,7 @@ enum PowerSource: String {
     case battery = "Battery"
 
     var localizedDescription: String {
-        return NSLocalizedString(self.rawValue, comment: "")
+        return NSLocalizedString("Power Source: \(self.rawValue)", comment: "")
     }
 }
 

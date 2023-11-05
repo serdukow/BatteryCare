@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "7041594F-4E39-4B19-BDED-B244B34670E5"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "15982AB4-A011-478D-B208-65CACF56992E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BatteryCare/UserPreferences.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "twentyPercentNotification"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "15982AB4-A011-478D-B208-65CACF56992E - f09231180f2f0b0c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static Battery_Care.UserPreferences.twentyPercentNotification.getter : Swift.Bool"
+                  moduleName = "Battery Care"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andreiserdiukov/Documents/BatteryCare/BatteryCare/UserPreferences.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "100">
+               </Location>
+               <Location
+                  uuid = "15982AB4-A011-478D-B208-65CACF56992E - f09231180f2f0bab"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static Battery_Care.UserPreferences.twentyPercentNotification.getter : Swift.Bool"
+                  moduleName = "Battery Care"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andreiserdiukov/Documents/BatteryCare/BatteryCare/UserPreferences.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "100">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

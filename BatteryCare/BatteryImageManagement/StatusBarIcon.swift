@@ -1,6 +1,5 @@
 //
 //  StatusBarIcon.swift
-//  powermann
 //
 //  Created by Andre on 02.11.2023.
 //

@@ -1,6 +1,5 @@
 //
 //  StatusNotification.swift
-//  powermann
 //
 //  Created by Andre on 02.11.2023.
 //
@@ -19,7 +18,7 @@ struct StatusNotification {
     /// - returns: An optional StatusNotification; Return nil when the notificationKey
     ///            is invalid or nil.
     init?(forState state: BatteryState?) {
-        guard let state = state, state != .charging(percentage: Percentage(numeric: 0)) else {
+        guard let state = state, state != .chargedAndPlugged else {
             return nil
         }
         guard let key = NotificationKey(rawValue: state.percentage.numeric ?? 0), key != .invalid else {
@@ -59,7 +58,9 @@ struct StatusNotification {
         (self.notificationKey != UserPreferences.lastNotified
             && UserPreferences.notifications.contains(self.notificationKey))
     }
-
+    
+    
+    
     /// Create a user notification for the current battery status
     ///
     /// - returns: The user notification to display
@@ -79,32 +80,33 @@ struct StatusNotification {
     ///
     /// - returns: The notification title
     private func getNotificationTitle() -> String {
-        if self.notificationKey == .eightyPercent {
-            return NSLocalizedString("Charged Notification Title", comment: "")
+        if self.notificationKey == .twentyPercent {
+            return NSLocalizedString("Low Battery Notification Title", comment: "")
         }
         else if self.notificationKey == .twentyTwoPercent {
             return NSLocalizedString("Low Battery Notification Title", comment: "")
         }
-        else if self.notificationKey == .twentyPercent {
-            return NSLocalizedString("Low Battery Notification Title", comment: "")
+        else if self.notificationKey == .eightyPercent {
+            return NSLocalizedString("Charged Notification Title", comment: "")
         }
         return String.localizedStringWithFormat(NSLocalizedString("Low Battery", comment: ""),
                                                 self.formattedPercentage())
     }
+
     
 
     /// Get the corresponding notification text for the current battery state
     ///
     /// - returns: The notification text
     private func getNotificationText() -> String {
-        if self.notificationKey == .eightyPercent {
-            return NSLocalizedString("Charged Notification Message", comment: "")
+        if self.notificationKey == .twentyPercent {
+            return NSLocalizedString("Low Battery Notification Message", comment: "")
         }
         else if self.notificationKey == .twentyTwoPercent {
             return NSLocalizedString("Battery Falls Message", comment: "")
         }
-        else if self.notificationKey == .twentyPercent {
-            return NSLocalizedString("Low Battery Notification Message", comment: "")
+        else if self.notificationKey == .eightyPercent {
+            return NSLocalizedString("Charged Notification Message", comment: "")
         }
         return NSLocalizedString("Low Battery Notification Message", comment: "")
     }

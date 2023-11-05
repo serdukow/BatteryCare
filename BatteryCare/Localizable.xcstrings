@@ -1,19 +1,14 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
-    "°C" : {
+    "Battery" : {
       "localizations" : {
-        "ru" : {
+        "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "°C"
+            "value" : "Batterie"
           }
-        }
-      }
-    },
-    "Battery" : {
-      "extractionState" : "manual",
-      "localizations" : {
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -28,80 +23,70 @@
         }
       }
     },
+    "Battery Condition Updating" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Batteriezustand: Aktualisierung..."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Battery Condition: Updating..."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Состояние аккумулятора: Обновление..."
+          }
+        }
+      }
+    },
     "Battery Falls Message" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Die Batterie ist fast leer."
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Your Battery is dropped below 22 %"
+            "value" : "Your battery is running low"
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Уровень заряда упал до 22 %"
+            "value" : "Ваш аккумулятор почти разряжен до оптимального уровня"
           }
         }
       }
     },
-    "Battery Temperature:" : {
-      "localizations" : {
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Температура батареи:"
-          }
-        }
-      }
-    },
-    "Calculating" : {
+    "Battery Temperature Updating" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Batterietemperatur: Aktualisierung..."
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Calculating"
+            "value" : "Battery Temperature: Updating..."
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Вычисление"
-          }
-        }
-      }
-    },
-    "Charge" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Charge"
-          }
-        },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Зарядка"
-          }
-        }
-      }
-    },
-    "Charged" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Charged"
-          }
-        },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Аккумулятор заряжен"
+            "value" : "Температура батареи: Обновление..."
           }
         }
       }
@@ -109,16 +94,22 @@
     "Charged Notification Message" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ihre Batterie hat das optimale Ladelevel von 80% erreicht."
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Charging is complete up to 80 %"
+            "value" : "Your battery has reached optimal charge level of 80%"
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Аккумулятор заряжен на 80 %"
+            "value" : "Ваш аккумулятор достигл оптимального уровня заряда в 80%"
           }
         }
       }
@@ -126,70 +117,67 @@
     "Charged Notification Title" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🔋 AKKU GELADEN"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Charging is complete"
+            "value" : "🔋BATTERY CHARGED"
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Аккумулятор заряжен"
+            "value" : "🔋АККУМУЛЯТОР ЗАРЯЖЕН"
           }
         }
       }
     },
-    "Cycle Count" : {
+    "Cycle Count Updating" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zykluszähler: Aktualisierung..."
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Cycle Count"
+            "value" : "Cycle Count: Updating..."
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Циклы перезарядки"
-          }
-        }
-      }
-    },
-    "Cycle Count:" : {
-      "localizations" : {
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Циклы перезарядки:"
-          }
-        }
-      }
-    },
-    "Health" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Health"
-          }
-        },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Состояние аккумулятора"
+            "value" : "Циклы перезарядки: Обновление..."
           }
         }
       }
     },
     "Low Battery" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🪫NIEDRIGER BATTERIESTAND"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🪫LOW BATTERY"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Низкий уровень зарядка"
+            "value" : "🪫НИЗКИЙ УРОВЕНЬ ЗАРЯДА"
           }
         }
       }
@@ -197,6 +185,12 @@
     "Low Battery Notification Message" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ihr Mac wird bald in den Ruhezustand versetzt, es sei denn, er ist an eine Stromquelle angeschlossen"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -206,7 +200,7 @@
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ваш Mac скоро заснет, если не подключить его к адаптеру питания"
+            "value" : "Ваш Mac скоро заснет, если вы не подключите его к адаптеру питания"
           }
         }
       }
@@ -214,77 +208,45 @@
     "Low Battery Notification Title" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🪫NIEDRIGER BATTERIESTAND"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Battery is low"
+            "value" : "🪫LOW BATTERY"
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Аккумулятор разряжен"
+            "value" : "🪫НИЗКИЙ УРОВЕНЬ ЗАРЯДА"
           }
         }
       }
     },
-    "Notifications" : {
+    "Percentage Updating" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Prozentsatz wird aktualisiert..."
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Notifications"
+            "value" : "Percentage Updating..."
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Уведомления"
-          }
-        }
-      }
-    },
-    "of 1000" : {
-      "localizations" : {
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "из 1000"
-          }
-        }
-      }
-    },
-    "Percentage" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Percentage"
-          }
-        },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Процент"
-          }
-        }
-      }
-    },
-    "Power Adapter" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Power Adapter"
-          }
-        },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Адаптер питания"
+            "value" : "Обновление..."
           }
         }
       }
@@ -292,6 +254,12 @@
     "Power Source" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stromquelle"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -306,97 +274,70 @@
         }
       }
     },
-    "Power Source:" : {
-      "localizations" : {
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Источник питания:"
-          }
-        }
-      }
-    },
-    "Power Usage" : {
+    "Power Source Updating" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stromquelle: Aktualisierung..."
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Power Usage"
+            "value" : "Power Source: Updating..."
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Энергопотребление"
+            "value" : "Источник питания: Обновление..."
           }
         }
       }
     },
-    "Preferences" : {
-      "extractionState" : "manual",
+    "Power Source: (self.rawValue)" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stromquelle: (self.rawValue)"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Preferences"
+            "value" : "Power Source: (self.rawValue)"
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Настройки"
+            "value" : "Источник питания: (self.rawValue)"
           }
         }
       }
     },
-    "Quit" : {
+    "Time Remaining Updating" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Verbleibende Zeit: Aktualisierung..."
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Quit"
+            "value" : "Time Remaining: Updating..."
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Выход"
-          }
-        }
-      }
-    },
-    "Temperature" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Temperature"
-          }
-        },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Температура"
-          }
-        }
-      }
-    },
-    "Time Remaining" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Time Remaining"
-          }
-        },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Оставшееся время"
+            "value" : "Оставшееся время: Обновление..."
           }
         }
       }
@@ -404,33 +345,22 @@
     "Unknown" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Unbekannt"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Unkown"
+            "value" : "Unknown"
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Неизвестно"
-          }
-        }
-      }
-    },
-    "Watts" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Watts"
-          }
-        },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ватты"
           }
         }
       }
