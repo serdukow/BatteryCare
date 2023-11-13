@@ -18,7 +18,7 @@ The original name of this application is [Apple Juice by Raphael Hanneken](https
 
 Initially, I spent a long time searching for a Mac OS application that would send me notifications about low battery levels and charging up to 80 percent or allow me to use custom values. I found many applications ranging from popular ones like Energiza and AlDente to less popular ones that I can't even remember. However, each of them had its drawbacks, personally for me.
 
-I was looking for an application that would be identical to the standard Apple battery app but with notifications and useful information. Eventually, I started writing this application myself. Since I mostly code in Python, I struggled day by day to understand how everything works until I came across Apple Juice. I was thrilled because it was exactly what I needed in terms of style, but I wanted to add my vision and much more.
+I was looking for an application that would be identical to the standard Apple battery app but with notifications and useful information. Eventually, I started writing this application myself. Since I mostly code in Python, I struggled day by day to understand how everything works until I came across [Apple Juice](https://github.com/raphaelhanneken/apple-juice). I was thrilled because it was exactly what I needed in terms of style, but I wanted to add my vision and much more.
 
 # Improvements that I Made
 
