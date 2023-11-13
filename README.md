@@ -1,12 +1,13 @@
 ![Logo](https://github.com/serdukow/BatteryCare/blob/7f06fce998bcd988f06bd09ea5d6173a801bb080/badge.png)
 
+# Battery Care
+Battery Notifications, Status, Health, Cycle Count and more...
+
 ![UI-1](https://github.com/serdukow/BatteryCare/blob/8671f6039dd53fc5b8560f92b82a1e3407256dab/UI-1.png)
 
 ![UI-2](https://github.com/serdukow/BatteryCare/blob/8671f6039dd53fc5b8560f92b82a1e3407256dab/UI-2.png)
 
 ![UI-3](https://github.com/serdukow/BatteryCare/blob/8671f6039dd53fc5b8560f92b82a1e3407256dab/UI-3.png)
-# Battery Care
-Battery Notifications, Status, Health, Cycle Count and more...
 
 
 # What it is and what it's for?
