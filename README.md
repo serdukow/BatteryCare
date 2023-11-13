@@ -1,4 +1,6 @@
-![Logo](https://github.com/serdukow/BatteryCare/blob/90dc405c70f8061936785c4f7d4df292cd2893b2/logo.png)
+<p align="center">
+    <img src="https://github.com/serdukow/BatteryCare/blob/90dc405c70f8061936785c4f7d4df292cd2893b2/logo.png" alt="Logo" width="200">
+</p>
 
 # Battery Care
 Battery Notifications, Status, Health, Cycle Count and more...
