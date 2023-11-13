@@ -16,6 +16,7 @@ struct CycleCount {
             return NSLocalizedString("Cycle Count Updating", comment: "")
         }
 
-        return "Cycle Count: \(cycleCount) of 1000"
+        let localizedStringFormat = NSLocalizedString("Cycle Count Capacity", comment: "")
+                return String(format: localizedStringFormat, cycleCount)
     }
 }

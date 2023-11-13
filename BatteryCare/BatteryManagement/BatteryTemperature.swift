@@ -18,10 +18,12 @@ struct BatteryTemperature {
         
         let temp = round(temperature / 100)
         
+        let localizedStringFormat = NSLocalizedString("Battery Temperature", comment: "")
+        
         if temp > 35 {
-            return "Battery Temperature: \(temp)°C 🔥"
+            return String(format: localizedStringFormat + " 🔥", temp)
         } else {
-            return "Battery Temperature: \(temp)°C"
+            return String(format: localizedStringFormat, temp)
         }
     }
 }

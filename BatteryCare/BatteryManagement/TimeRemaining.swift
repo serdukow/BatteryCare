@@ -19,8 +19,10 @@ struct TimeRemaining {
         if batteryState == .chargedAndPlugged {
             return NSLocalizedString("Charged Notification Title", comment: "")
         }
+        
+        let localizedStringFormat = NSLocalizedString("Time Remaining", comment: "")
 
-        return String(format: "Time Remainig: %dh %02dm", arguments: [minutesRemaining / 60, minutesRemaining % 60])
+                return String(format: localizedStringFormat, minutesRemaining / 60, minutesRemaining % 60)
     }
     
     var timeFormatted: String {
