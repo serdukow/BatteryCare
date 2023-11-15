@@ -5,6 +5,12 @@
 # Battery Care
 Battery Notifications, Status, Health, Cycle Count and more...
 
+![low-battery-20](https://github.com/serdukow/BatteryCare/blob/99c7add955568a428fbacf44ce19257f276b958b/low-battery-20.png)
+
+![low-battery-22](https://github.com/serdukow/BatteryCare/blob/99c7add955568a428fbacf44ce19257f276b958b/low-battery-22.png)
+
+![optimal-80](https://github.com/serdukow/BatteryCare/blob/99c7add955568a428fbacf44ce19257f276b958b/optimal-80.png)
+
 ![UI-1](https://github.com/serdukow/BatteryCare/blob/8671f6039dd53fc5b8560f92b82a1e3407256dab/UI-1.png)
 
 ![UI-2](https://github.com/serdukow/BatteryCare/blob/8671f6039dd53fc5b8560f92b82a1e3407256dab/UI-2.png)
