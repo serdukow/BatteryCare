@@ -44,8 +44,8 @@ I don't know if there are any restrictions on such code modifications and its pu
 I did it personally for myself, but perhaps someone else will like what I have implemented, so I decided to make the code publicly available, and [Raphael Hanneken's](https://github.com/raphaelhanneken/apple-juice) code has not been supported for 3 years and may not be supported anymore.
 
 # Plans
-- Localizations (if someone is willing to help, welcome).
-- I want to add a charge limit of 80%. I found an interesting [limiting app](https://github.com/actuallymentor/battery), but I couldn't implement it into my code. If someone can help with this, again, welcome. Or maybe write it from scratch, but I have no idea how to do it, and the battery is lightweighs and works perfectly.
+- More Localizations (if someone is willing to help, welcome).
+- Add a charge limit of 80%.
 
 # Localizations
 ![Static Badge](https://img.shields.io/badge/verified-brightgreen?label=English)
@@ -58,7 +58,7 @@ I did it personally for myself, but perhaps someone else will like what I have i
 ## Installation
 
 Just download latest `.dmg`
- package and the \
+ package and then \
   `Drug % Drop` it to Application folder.\
 Make sure you have enabled 'Launch At Login' in Preferences and turned on charge status notifications.
     
